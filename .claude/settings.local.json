@@ -1,0 +1,7 @@
+{
+  "permissions": {
+    "allow": [
+      "PowerShell(cmd /c \"dir c:\\\\axora\\\\portfolio\\\\node_modules\\\\lucide-react\\\\dist\\\\esm /b\" 2>&1)"
+    ]
+  }
+}
