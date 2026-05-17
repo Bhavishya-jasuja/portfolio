@@ -6,6 +6,7 @@ import { SITE_CONFIG, NAV_ITEMS } from "@/constants";
 import { fadeUpVariants } from "@/animations/variants";
 import { GithubIcon, XIcon, LinkedInIcon, DribbbleIcon } from "@/components/SocialIcons";
 import { scrollTo } from "@/hooks/useSmoothScroll";
+import { NexarcMark } from "@/components/NexarcLogo";
 
 const socials = [
   { icon: GithubIcon, href: SITE_CONFIG.socials.github, label: "GitHub" },
@@ -22,9 +23,7 @@ export default function Footer() {
           {/* Brand */}
           <div>
             <div className="flex items-center gap-2 mb-4">
-              <span className="w-7 h-7 rounded-lg bg-gradient-to-br from-blue-500 to-violet-600 flex items-center justify-center text-white text-xs font-bold">
-                A
-              </span>
+              <NexarcMark size={28} />
               <span className="text-white font-semibold text-base">{SITE_CONFIG.name}</span>
             </div>
             <p className="text-white/35 text-sm leading-relaxed max-w-xs mb-6">

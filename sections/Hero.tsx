@@ -29,10 +29,10 @@ const HEADLINE_LINES = [
 
 // GSAP counter animation helpers
 const STAT_META = [
-  { target: 50, suffix: "+", label: "Projects delivered" },
-  { target: 30, suffix: "+", label: "Happy clients" },
-  { target: 5,  suffix: "★", label: "Average rating" },
-  { target: 3,  suffix: " days", label: "Avg. response time" },
+  { target: 50,  suffix: "+",    label: "Projects delivered" },
+  { target: 30,  suffix: "+",    label: "Happy clients" },
+  { target: 5,   suffix: "★",   label: "Average rating" },
+  { target: 24,  suffix: "hrs",  label: "Avg. response time" },
 ];
 
 export default function Hero() {

@@ -6,6 +6,7 @@ import { NAV_ITEMS, SITE_CONFIG } from "@/constants";
 import { scrollTo } from "@/hooks/useSmoothScroll";
 import { cn } from "@/lib/utils";
 import { ArrowUpRight } from "lucide-react";
+import { NexarcMark } from "@/components/NexarcLogo";
 
 const EASE = [0.22, 1, 0.36, 1] as const;
 
@@ -70,13 +71,7 @@ export default function Navigation() {
         <nav className="max-w-7xl mx-auto px-6 h-[68px] flex items-center justify-between">
           {/* Logo */}
           <button onClick={() => scrollTo("#hero")} className="flex items-center gap-2 group">
-            <motion.span
-              className="w-7 h-7 rounded-lg bg-gradient-to-br from-blue-500 to-violet-600 flex items-center justify-center text-white text-xs font-bold"
-              whileHover={{ scale: 1.1, rotate: 5 }}
-              transition={{ type: "spring", stiffness: 400, damping: 15 }}
-            >
-              A
-            </motion.span>
+            <NexarcMark size={28} animated />
             <span className="text-white font-semibold tracking-tight text-base group-hover:opacity-75 transition-opacity">
               {SITE_CONFIG.name}
             </span>

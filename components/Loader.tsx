@@ -3,6 +3,7 @@
 import { useEffect, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { SITE_CONFIG } from "@/constants";
+import { NexarcMark } from "@/components/NexarcLogo";
 
 const EASE = [0.22, 1, 0.36, 1] as const;
 
@@ -56,16 +57,25 @@ export default function Loader({ onComplete }: { onComplete: () => void }) {
 
           {/* Center content */}
           <div className="flex-1 flex flex-col items-center justify-center">
-            {/* Brand name — letters reveal */}
-            <div className="mb-12 overflow-hidden">
-              <motion.p
-                className="text-white/90 text-xs tracking-[0.5em] uppercase font-light"
-                initial={{ y: "110%", opacity: 0 }}
-                animate={{ y: "0%", opacity: 1 }}
-                transition={{ duration: 0.7, delay: 0.1, ease: EASE }}
+            {/* Logo mark + brand name reveal */}
+            <div className="mb-12 flex flex-col items-center gap-4">
+              <motion.div
+                initial={{ opacity: 0, scale: 0.6, filter: "blur(8px)" }}
+                animate={{ opacity: 1, scale: 1, filter: "blur(0px)" }}
+                transition={{ duration: 0.6, delay: 0.08, ease: EASE }}
               >
-                {SITE_CONFIG.name}
-              </motion.p>
+                <NexarcMark size={52} />
+              </motion.div>
+              <div className="overflow-hidden">
+                <motion.p
+                  className="text-white/90 text-xs tracking-[0.5em] uppercase font-light"
+                  initial={{ y: "110%", opacity: 0 }}
+                  animate={{ y: "0%", opacity: 1 }}
+                  transition={{ duration: 0.7, delay: 0.28, ease: EASE }}
+                >
+                  {SITE_CONFIG.name}
+                </motion.p>
+              </div>
             </div>
 
             {/* Large counter */}

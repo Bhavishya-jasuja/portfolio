@@ -1,15 +1,16 @@
 export const SITE_CONFIG = {
-  name: "Axora",
-  fullName: "Axora Digital",
-  title: "Premium Web & AI Solutions for Growing Businesses",
-  tagline: "I build websites, AI tools, and e-commerce solutions that help businesses attract more clients and grow revenue.",
+  name: "Nexarc",
+  fullName: "Nexarc Digital",
+  title: "Premium Web & Digital Solutions for Growing Businesses",
+  tagline:
+    "I build websites, AI tools, and e-commerce solutions that help businesses attract more clients and grow revenue.",
   description:
     "Full-stack developer specializing in business websites, AI-powered applications, e-commerce platforms, and custom digital solutions. 50+ projects delivered.",
-  email: "hello@axora.dev",
-  phone: "+1 (555) 000-0000",
-  location: "Available Worldwide · Remote",
+  email: "jasujabhavishya@gmail.com",
+  phone: "+91 9520649815",
+  location: "Muzaffarnagar, UP, India · Available Worldwide",
   socials: {
-    github: "https://github.com",
+    github: "https://github.com/Bhavishya-jasuja",
     twitter: "https://twitter.com",
     linkedin: "https://linkedin.com",
     dribbble: "https://dribbble.com",
@@ -33,10 +34,10 @@ export const ROLES = [
 ];
 
 export const STATS = [
-  { value: "50+", label: "Projects delivered" },
-  { value: "30+", label: "Happy clients" },
-  { value: "5★", label: "Average rating" },
-  { value: "3 days", label: "Avg. response time" },
+  { value: "50+",  label: "Projects delivered" },
+  { value: "30+",  label: "Happy clients" },
+  { value: "5★",   label: "Average rating" },
+  { value: "24hrs", label: "Avg. response time" },
 ];
 
 export const TRUST_BADGES = [

@@ -37,8 +37,9 @@ const WHY_ME = [
 ];
 
 const INDUSTRIES = [
-  "Clinics & Healthcare", "Restaurants & Cafés", "Retail & Fashion",
-  "Law Firms", "Fitness Studios", "Real Estate", "Agencies", "SaaS & Startups",
+  "Clinics & Healthcare", "Economics & Education", "Supply Chain", "Restaurants & Cafés",
+  "HR & Leadership", "Real Estate", "Retail & Fashion", "SaaS & Startups",
+  "Law Firms", "Agencies",
 ];
 
 function TiltCard({ children, className, style }: { children: React.ReactNode; className?: string; style?: React.CSSProperties }) {
@@ -123,14 +124,15 @@ export default function About() {
 
             <motion.div variants={staggerItem} className="space-y-4 text-white/48 text-base leading-relaxed mb-8">
               <p>
-                I'm a full-stack developer with 5+ years of experience building websites and
-                digital tools for real businesses — from solo practitioners and local shops to
-                funded startups.
+                I'm Bhavishya Jasuja — a full-stack developer based in Muzaffarnagar, India,
+                with 3+ years of experience building websites, digital tools, and web
+                applications for businesses across India and worldwide.
               </p>
               <p>
-                I don't just write code. I think about your customers, your conversion rates,
-                and what your website actually needs to grow your business. Every decision
-                I make is grounded in what works commercially, not just what looks good.
+                From dental clinics and economics platforms to supply chain tools and coaching
+                institutes, I bring a commercial mindset to every project. I don't just write
+                code — I think about your customers, your conversions, and what your business
+                actually needs to grow.
               </p>
             </motion.div>
 
